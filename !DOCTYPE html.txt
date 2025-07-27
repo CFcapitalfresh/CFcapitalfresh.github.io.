@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CF Capital Fresh - Ψύξη, Κλιματισμός & Καινοτομία</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-color: #f0f4f8;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #3b82f6, #1e40af);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">
+                CF <span class="text-blue-600">Capital Fresh</span>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#services" class="text-gray-600 hover:text-blue-600 transition duration-300">Υπηρεσίες</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300">Σχετικά με Εμάς</a>
+                <a href="#patents" class="text-gray-600 hover:text-blue-600 transition duration-300">Καινοτομία</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-300">Επικοινωνία</a>
+            </nav>
+            <button class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero-bg py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                    Η Επόμενη Γενιά στην <span class="gradient-text">Ψύξη</span> & τον <span class="gradient-text">Κλιματισμό</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    Παρέχουμε κορυφαίες λύσεις ψύξης και κλιματισμού, ενώ πρωτοπορούμε με ειδικές κατασκευές και κατοχυρωμένες πατέντες που αλλάζουν τα δεδομένα.
+                </p>
+                <a href="#contact" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300 shadow-lg transform hover:scale-105">
+                    Ζητήστε Προσφορά
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Οι Υπηρεσίες μας</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                        <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Επαγγελματική Ψύξη</h3>
+                        <p class="text-gray-600">Μελέτη, εγκατάσταση και συντήρηση ψυκτικών θαλάμων και συστημάτων για κάθε επαγγελματική ανάγκη.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                        <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                             <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Κλιματισμός & Εξαερισμός</h3>
+                        <p class="text-gray-600">Ολοκληρωμένες λύσεις κλιματισμού και εξαερισμού για οικιακούς και επαγγελματικούς χώρους.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                        <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l4 4m0 0l4-4m-4 4v14m-4-4h4m-4 4h4m4-14l-4 4m0 0l-4-4m4 4v14m5-4h-4m4-4h-4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Ειδικές Κατασκευές</h3>
+                        <p class="text-gray-600">Σχεδιάζουμε και υλοποιούμε custom μηχανολογικές λύσεις και αυτοματισμούς, προσαρμοσμένους στις ανάγκες σας.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://placehold.co/600x400/3b82f6/ffffff?text=CF+Capital+Fresh" alt="Η ομάδα μας" class="rounded-lg shadow-xl">
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold mb-4">Η Αποστολή μας είναι η Καινοτομία</h2>
+                        <p class="text-gray-600 mb-4">
+                            Στην CF Capital Fresh, δεν παρέχουμε απλώς υπηρεσίες. Δημιουργούμε λύσεις. Με πολυετή εμπειρία στον χώρο της ψύξης και του κλιματισμού, επενδύουμε συνεχώς στην έρευνα και την ανάπτυξη για να προσφέρουμε στους πελάτες μας προϊόντα και υπηρεσίες που ξεπερνούν τις προσδοκίες τους.
+                        </p>
+                        <p class="text-gray-600">
+                            Η ομάδα μας αποτελείται από εξειδικευμένους τεχνικούς και μηχανικούς που είναι έτοιμοι να αντιμετωπίσουν κάθε πρόκληση, από την πιο απλή εγκατάσταση μέχρι την πιο σύνθετη ειδική κατασκευή.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Patents/Innovation Section -->
+        <section id="patents" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Κατοχυρωμένες Ευρεσιτεχνίες</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-10">Είμαστε περήφανοι που μετατρέπουμε τις ιδέες σε πράξη, δημιουργώντας καινοτόμες λύσεις όπως η "έξυπνη" μηχανή παρασκευής σουβλακιού.</p>
+                <div class="bg-white rounded-lg shadow-2xl p-8 max-w-4xl mx-auto">
+                     <img src="https://placehold.co/800x400/e0e7ff/374151?text=Η+Καινοτομία+μας" alt="Πατέντα" class="rounded-md mb-6">
+                    <h3 class="text-2xl font-bold text-blue-600">Αυτοματισμός & Αποδοτικότητα</h3>
+                    <p class="text-gray-700 mt-2">Η καινοτομία μας δεν σταματά. Εξερευνούμε συνεχώς νέους τρόπους για να βελτιώσουμε τις διαδικασίες και να προσφέρουμε αξία στους συνεργάτες μας.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold text-center mb-8">Επικοινωνήστε Μαζί μας</h2>
+                    <form action="#" method="POST">
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Όνομα</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" required>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Μήνυμα</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-blue-600 text-white font-bold py-3 px-10 rounded-lg hover:bg-blue-700 transition duration-300 shadow-md">
+                                Αποστολή
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg font-bold mb-2">CF Capital Fresh</p>
+            <p class="text-gray-400 mb-4">Μιας Μηλιάς 16, Λακατάμια, 2323, Λευκωσία, Κύπρος</p>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.59 0 0 .59 0 1.325v21.35C0 23.41.59 24 1.325 24H12.82v-9.29h-3.128V11.28h3.128V8.91c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.918c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.43h-3.12V24h5.713c.735 0 1.325-.59 1.325-1.325V1.325C24 .59 23.41 0 22.675 0z"/></svg></a>
+                <a href="#" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.012 3.584-.07 4.85c-.148 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.85s.012-3.584.07-4.85c.148-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.947s-.014-3.667-.072-4.947c-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"/></svg></a>
+            </div>
+            <p class="text-sm text-gray-500">&copy; 2025 CF Capital Fresh. Με επιφύλαξη παντός δικαιώματος.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
