@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CF Capital Fresh - Cooling & Air Conditioning Solutions</title>
+
+    <meta name="description" content="Specialized solutions for commercial refrigeration, air conditioning, and innovative constructions by CF Capital Fresh in Nicosia. Quality and reliability for every project.">
+    <meta property="og:title" content="CF Capital Fresh - The Future of Cooling">
+    <meta property="og:description" content="From specialized air conditioning solutions to award-winning patents, CF Capital Fresh is synonymous with quality and innovation.">
+    <meta property="og:image" content="https://placehold.co/1200x630/001c46/ffffff?text=CF+Capital+Fresh">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cfcapitalfresh.github.io/cf-capital-fresh-en/">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    <style id="main-styles">
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-section { position: relative; color: white; height: 80vh; }
+        .swiper-container { width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
+        .swiper-slide { background-size: cover; background-position: center; }
+        .hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 28, 70, 0.7); z-index: 1; }
+        .hero-content { position: relative; z-index: 2; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+        .modal-video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+        .modal-video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .innovation-item-display, .service-card { cursor: pointer; }
+        .service-card .card-icon-wrapper { position: relative; width: 80px; height: 80px; margin: 0 auto 1.5rem; border-radius: 9999px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #e0f2fe; }
+        .service-card .card-icon-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+        #back-to-top { transition: opacity 0.3s, transform 0.3s; }
+        .prose ul { list-style-type: disc; padding-left: 1.5em; }
+        .prose li { margin-top: 0.25em; margin-bottom: 0.25em; }
+        .format-toolbar { display: flex; gap: 0.5rem; margin-bottom: 0.5rem; }
+        .format-toolbar button { background-color: #f3f4f6; border: 1px solid #d1d5db; border-radius: 0.375rem; padding: 0.25rem 0.75rem; font-size: 0.875rem; line-height: 1.25rem; cursor: pointer; }
+        .format-toolbar button:hover { background-color: #e5e7eb; }
+        .service-slider-container { width: 100%; height: 450px; position: relative; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 relative">
+
+    <div id="editor-sidebar" class="fixed top-0 right-0 z-[100] h-full bg-white shadow-lg p-6 w-80 overflow-y-auto transform translate-x-full transition-transform duration-300 ease-in-out">
+        <h2 class="text-xl font-bold mb-4">Content Editor</h2>
+        <form id="editor-form" class="space-y-4 text-sm">
+            <div>
+                <h3 class="font-bold text-gray-700 mb-2">General Information</h3>
+                 <label for="logo-url" class="block text-gray-600">Logo URL</label>
+                <input type="text" id="logo-url" name="logo-url" class="w-full p-2 border border-gray-300 rounded-md">
+                <label for="phone" class="block text-gray-600 mt-2">Phone</label>
+                <input type="text" id="phone" name="phone" class="w-full p-2 border border-gray-300 rounded-md">
+                <label for="email" class="block text-gray-600 mt-2">Email</label>
+                <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded-md">
+                <label for="address" class="block text-gray-600 mt-2">Address</label>
+                <input type="text" id="address" name="address" class="w-full p-2 border border-gray-300 rounded-md">
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-700 mt-4 mb-2">Social Media</h3>
+                <label for="social-facebook" class="block text-gray-600">Facebook URL</label>
+                <input type="url" id="social-facebook" name="social-facebook" class="w-full p-2 border border-gray-300 rounded-md">
+                <label for="social-instagram" class="block text-gray-600 mt-2">Instagram URL</label>
+                <input type="url" id="social-instagram" name="social-instagram" class="w-full p-2 border border-gray-300 rounded-md">
+                <label for="social-linkedin" class="block text-gray-600 mt-2">LinkedIn URL</label>
+                <input type="url" id="social-linkedin" name="social-linkedin" class="w-full p-2 border border-gray-300 rounded-md">
+                <label for="social-twitter" class="block text-gray-600 mt-2">X / Twitter URL</label>
+                <input type="url" id="social-twitter" name="social-twitter" class="w-full p-2 border border-gray-300 rounded-md">
+                <label for="social-youtube" class="block text-gray-600 mt-2">YouTube URL</label>
+                <input type="url" id="social-youtube" name="social-youtube" class="w-full p-2 border border-gray-300 rounded-md">
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-700 mb-2">Hero Section</h3>
+                <label for="hero-title" class="block text-gray-600">Title</label>
+                <input type="text" id="hero-title" name="hero-title" class="w-full p-2 border border-gray-300 rounded-md">
+                <label for="hero-subtitle" class="block text-gray-600 mt-2">Subtitle</label>
+                <div class="format-toolbar">
+                    <button type="button" class="format-btn" data-format="bold" data-target="hero-subtitle"><b>B</b></button>
+                    <button type="button" class="format-btn" data-format="italic" data-target="hero-subtitle"><i>I</i></button>
+                </div>
+                <textarea id="hero-subtitle" name="hero-subtitle" rows="3" class="w-full p-2 border border-gray-300 rounded-md"></textarea>
+                <h5 class="font-medium text-gray-700 mt-4 mb-2">Slider Images</h5>
+                <div id="hero-slider-images" class="space-y-2"></div>
+                <button type="button" id="add-hero-image-btn" class="bg-blue-500 text-white font-bold py-1 px-3 rounded-lg hover:bg-blue-600 transition duration-300 w-full">+ Add Image</button>
+            </div>
+            <div id="about-form-section" class="space-y-4">
+                <h3 class="font-bold text-gray-700 mb-2">Our Philosophy</h3>
+                <label for="about-title" class="block text-gray-600">Title</label>
+                <input type="text" id="about-title" name="about-title" class="w-full p-2 border border-gray-300 rounded-md">
+                <label for="about-text" class="block text-gray-600 mt-2">Text</label>
+                <div class="format-toolbar">
+                    <button type="button" class="format-btn" data-format="bold" data-target="about-text"><b>B</b></button>
+                    <button type="button" class="format-btn" data-format="italic" data-target="about-text"><i>I</i></button>
+                </div>
+                <textarea id="about-text" name="about-text" rows="5" class="w-full p-2 border border-gray-300 rounded-md"></textarea>
+                <h5 class="font-medium text-gray-700 mt-4 mb-2">Slider Images ("Our Philosophy")</h5>
+                <div id="about-slider-images" class="space-y-2"></div>
+                <button type="button" id="add-about-image-btn" class="bg-blue-500 text-white font-bold py-1 px-3 rounded-lg hover:bg-blue-600 transition duration-300 w-full">+ Add Image</button>
+                <h5 class="font-medium text-gray-700 mt-4 mb-2">Gallery ("View Media" Modal)</h5>
+                <div id="about-media-inputs" class="space-y-2"></div>
+                <div class="flex space-x-2 mt-2">
+                    <button type="button" class="add-media-btn bg-blue-500 text-white font-bold py-1 px-3 rounded-lg hover:bg-blue-600 transition duration-300" data-section="about" data-type="photo">Photo</button>
+                    <button type="button" class="add-media-btn bg-gray-700 text-white font-bold py-1 px-3 rounded-lg hover:bg-gray-800 transition duration-300" data-section="about" data-type="video">Video</button>
+                </div>
+            </div>
+            <div id="services-form-section" class="space-y-6">
+                <h3 class="font-bold text-gray-700 mb-2">Service Sections & Cards</h3>
+                <div class="p-3 border rounded-md space-y-2">
+                    <h4 class="font-semibold text-blue-600 mb-2">Commercial Refrigeration (Service 1)</h4>
+                    <label for="service1-icon-url" class="block text-gray-600">Card Icon URL</label>
+                    <input type="text" id="service1-icon-url" name="service1-icon-url" class="w-full p-2 border border-gray-300 rounded-md">
+                    <label for="service1-title" class="block text-gray-600">Section & Card Title</label>
+                    <input type="text" id="service1-title" name="service1-title" class="w-full p-2 border border-gray-300 rounded-md">
+                    <label for="service1-desc" class="block text-gray-600">Detailed Description</label>
+                     <div class="format-toolbar">
+                        <button type="button" class="format-btn" data-format="bold" data-target="service1-desc"><b>B</b></button>
+                        <button type="button" class="format-btn" data-format="italic" data-target="service1-desc"><i>I</i></button>
+                    </div>
+                    <textarea id="service1-desc" name="service1-desc" rows="5" class="w-full p-2 border border-gray-300 rounded-md"></textarea>
+                    <h5 class="font-medium text-gray-700 pt-2 mb-2">Slider Images</h5>
+                    <div id="service1-slider-images" class="space-y-2"></div>
+                    <button type="button" class="add-service-image-btn bg-blue-500 text-white font-bold py-1 px-3 rounded-lg hover:bg-blue-600 transition duration-300 w-full" data-service="service1">+ Add Image</button>
+                    <h5 class="font-medium text-gray-700 pt-2 mb-2">Gallery ("View Media" Modal)</h5>
+                    <div id="service1-media-inputs" class="space-y-2"></div>
+                    <div class="flex space-x-2 mt-2">
+                        <button type="button" class="add-media-btn bg-blue-500 text-white font-bold py-1 px-3 rounded-lg hover:bg-blue-600 transition duration-300" data-section="service1" data-type="photo">Photo</button>
+                        <button type="button" class="add-media-btn bg-gray-700 text-white font-bold py-1 px-3 rounded-lg hover:bg-gray-800 transition duration-300" data-section="service1" data-type="video">Video</button>
+                    </div>
+                </div>
+                <div class="p-3 border rounded-md space-y-2">
+                    <h4 class="font-semibold text-blue-600 mb-2">Air Conditioning (Service 2)</h4>
+                    <label for="service2-icon-url" class="block text-gray-600">Card Icon URL</label>
+                    <input type="text" id="service2-icon-url" name="service2-icon-url" class="w-full p-2 border border-gray-300 rounded-md">
+                    <label for="service2-title" class="block text-gray-600">Section & Card Title</label>
+                    <input type="text" id="service2-title" name="service2-title" class="w-full p-2 border border-gray-300 rounded-md">
+                    <label for="service2-desc" class="block text-gray-600">Detailed Description</label>
+                    <div class="format-toolbar">
+                        <button type="button" class="format-btn" data-format="bold" data-target="service2-desc"><b>B</b></button>
+                        <button type="button" class="format-btn" data-format="italic" data-target="service2-desc"><i>I</i></button>
+                    </div>
+                    <textarea id="service2-desc" name="service2-desc" rows="5" class="w-full p-2 border border-gray-300 rounded-md"></textarea>
+                    <h5 class="font-medium text-gray-700 pt-2 mb-2">Slider Images</h5>
+                    <div id="service2-slider-images" class="space-y-2"></div>
+                    <button type="button" class="add-service-image-btn bg-blue-500 text-white font-bold py-1 px-3 rounded-lg hover:bg-blue-600 transition duration-300 w-full" data-service="service2">+ Add Image</button>
+                    <h5 class="font-medium text-gray-700 pt-2 mb-2">Gallery ("View Media" Modal)</h5>
+                    <div id="service2-media-inputs" class="space-y-2"></div>
+                    <div class="flex space-x-2 mt-2">
+                        <button type="button" class="add-media-btn bg-blue-500 text-white font-bold py-1 px-3 rounded-lg hover:bg-blue-600 transition duration-300" data-section="service2" data-type="photo">Photo</button>
+                        <button type="button" class="add-media-btn bg-gray-700 text-white font-bold py-1 px-3 rounded-lg hover:bg-gray-800 transition duration-300" data-section="service2" data-type="video">Video</button>
+                    </div>
+                </div>
+                <div class="p-3 border rounded-md space-y-2">
+                    <h4 class="font-semibold text-blue-600 mb-2">Heating, Heat Pumps & Gas Boilers (Service 3)</h4>
+                    <label for="service3-icon-url" class="block text-gray-600">Card Icon URL</label>
+                    <input type="text" id="service3-icon-url" name="service3-icon-url" class="w-full p-2 border border-gray-300 rounded-md">
+                    <label for="service3-title" class="block text-gray-600">Section & Card Title</label>
+                    <input type="text" id="service3-title" name="service3-title" class="w-full p-2 border border-gray-300 rounded-md">
+                    <label for="service3-desc" class="block text-gray-600">Detailed Description</label>
+                     <div class="format-toolbar">
+                        <button type="button" class="format-btn" data-format="bold" data-target="service3-desc"><b>B</b></button>
+                        <button type="button" class="format-btn" data-format="italic" data-target="service3-desc"><i>I</i></button>
+                    </div>
+                    <textarea id="service3-desc" name="service3-desc" rows="5" class="w-full p-2 border border-gray-300 rounded-md"></textarea>
+                    <h5 class="font-medium text-gray-700 pt-2 mb-2">Slider Images</h5>
+                    <div id="service3-slider-images" class="space-y-2"></div>
+                    <button type="button" class="add-service-image-btn bg-blue-500 text-white font-bold py-1 px-3 rounded-lg hover:bg-blue-600 transition duration-300 w-full" data-service="service3">+ Add Image</button>
+                    <h5 class="font-medium text-gray-700 pt-2 mb-2">Gallery ("View Media" Modal)</h5>
+                    <div id="service3-media-inputs" class="space-y-2"></div>
+                    <div class="flex space-x-2 mt-2">
+                        <button type="button" class="add-media-btn bg-blue-500 text-white font-bold py-1 px-3 rounded-lg hover:bg-blue-600 transition duration-300" data-section="service3" data-type="photo">Photo</button>
+                        <button type="button" class="add-media-btn bg-gray-700 text-white font-bold py-1 px-3 rounded-lg hover:bg-gray-800 transition duration-300" data-section="service3" data-type="video">Video</button>
+                    </div>
+                </div>
+                <div class="p-3 border rounded-md space-y-2">
+                    <h4 class="font-semibold text-blue-600 mb-2">Innovation & Custom Constructions (Card 4)</h4>
+                    <label for="innovation-icon-url" class="block text-gray-600">Card Icon URL</label>
+                    <input type="text" id="innovation-icon-url" name="innovation-icon-url" class="w-full p-2 border border-gray-300 rounded-md">
+                </div>
+            </div>
+            <div id="innovation-form-section" class="space-y-4">
+                <h3 class="font-bold text-gray-700 mb-2">Innovation (Detailed Section)</h3>
+                 <div>
+                    <label for="innovation-main-title" class="block text-gray-600">Main Title (Section & Card)</label>
+                    <input type="text" id="innovation-main-title" name="innovation-main-title" class="w-full p-2 border border-gray-300 rounded-md">
+                </div>
+                <hr class="my-4">
+                <p class="text-xs text-gray-500">Add or remove individual innovation items that will be displayed below.</p>
+                <div id="innovation-inputs" class="space-y-4"></div>
+                <button type="button" id="add-innovation-btn" class="bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300 w-full">Add Innovation Item</button>
+            </div>
+            <button type="submit" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300 w-full">Save & Apply</button>
+            <button type="button" id="export-btn" class="bg-green-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-green-700 transition duration-300 w-full mt-2">Export for Upload</button>
+        </form>
+        <button id="close-editor-btn" class="absolute top-4 left-4 text-gray-600 hover:text-gray-900 text-3xl font-bold">&times;</button>
+    </div>
+
+    <button id="open-editor-btn" class="fixed bottom-4 right-4 z-50 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-110">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg>
+    </button>
+    
+    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-white z-40 transform -translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-4">
+                 <a href="https://cfcapitalfresh.github.io/" class="bg-gray-200 text-gray-800 font-bold py-2 px-3 rounded-md text-sm hover:bg-gray-300 transition duration-300">GR</a>
+                <button id="close-mobile-menu" class="text-gray-700 text-3xl font-bold">&times;</button>
+            </div>
+            <nav class="flex flex-col space-y-4">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300 text-lg">Our Philosophy</a>
+                <a href="#services" class="text-gray-600 hover:text-blue-600 transition duration-300 text-lg">Services</a>
+                <a id="mobile-nav-link-innovation" href="#innovation" class="text-gray-600 hover:text-blue-600 transition duration-300 text-lg hidden">Innovation</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-300 text-lg">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <div id="website-container" class="transition-transform duration-300 ease-in-out">
+        <header class="bg-slate-50 shadow-md sticky top-0 z-30">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <a href="#" class="flex items-center space-x-2">
+                    <img id="header-logo" src="https://placehold.co/150x50/f8fafc/1e3a8a?text=LOGO" alt="CF Capital Fresh Logo" class="h-24 w-auto">
+                </a>
+                <nav class="hidden md:flex items-center">
+                    <a href="#about" class="text-black font-bold hover:text-blue-600 transition duration-300 py-2 px-4">Our Philosophy</a>
+                    <a href="#services" class="text-black font-bold hover:text-blue-600 transition duration-300 py-2 px-4 ml-4 border-l border-gray-300">Services</a>
+                    <a id="nav-link-innovation" href="#innovation" class="text-black font-bold hover:text-blue-600 transition duration-300 py-2 px-4 ml-4 border-l border-gray-300 hidden">Innovation</a>
+                    <a href="#contact" class="text-black font-bold hover:text-blue-600 transition duration-300 py-2 px-4 ml-4 border-l border-gray-300">Contact</a>
+                     <div class="pl-4 ml-4 border-l border-gray-300">
+                         <a href="tel: " id="header-phone-link" class="text-black font-bold hover:text-blue-600 transition duration-300"></a>
+                    </div>
+                     <div class="pl-4 ml-4 border-l border-gray-300">
+                        <a href="https://cfcapitalfresh.github.io/" class="bg-gray-200 text-gray-800 font-bold py-2 px-3 rounded-md text-sm hover:bg-gray-300 transition duration-300">GR</a>
+                    </div>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </header>
+        
+        <main>
+            <section class="hero-section text-white py-24 md:py-40">
+                <div class="swiper-container hero-slider h-full">
+                    <div class="swiper-wrapper" id="hero-slider-wrapper"></div>
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content container mx-auto px-6 text-center">
+                    <h1 id="hero-title-text" class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Reliable Service & Upgrade Solutions</h1>
+                    <div id="hero-subtitle-text" class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-8 prose">Specialized repairs and upgrades for commercial refrigeration and air conditioning systems. Our experience is your business's guarantee.</div>
+                    <a href="#contact" class="bg-blue-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-600 transition duration-300 shadow-lg transform hover:scale-105 text-lg">Contact Us</a>
+                </div>
+            </section>
+            <section id="about" class="py-20 bg-white overflow-hidden">
+                <div class="container mx-auto px-6">
+                    <div class="grid md:grid-cols-2 gap-16 items-center">
+                        <div class="order-2 md:order-1" data-aos="fade-right">
+                            <h2 id="about-title-text" class="text-3xl font-bold text-gray-800 mb-4">Our Philosophy</h2>
+                            <div id="about-text-content" class="text-gray-600 leading-relaxed prose"></div>
+                             <div class="mt-6">
+                               <a href="#" class="open-modal text-blue-600 font-semibold hover:underline" data-section="about"> View Media &rarr;</a>
+                            </div>
+                        </div>
+                        <div id="about-media-display" class="order-1 md:order-2 service-slider-container rounded-lg shadow-xl overflow-hidden" data-aos="fade-left">
+                           <div class="swiper-container" id="about-slider">
+                                <div class="swiper-wrapper"><div class="swiper-slide" style="background-image: url('https://i.imgur.com/ggyt6tB.jpeg');"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="services" class="py-20 bg-slate-50 overflow-hidden">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-12" data-aos="fade-up">
+                        <h2 class="text-3xl font-bold text-gray-800">Our Core Services</h2>
+                        <p class="text-gray-600 mt-2">Click on each service to see more details.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <a href="#service-detail-1" class="service-card block bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition-all duration-300" data-service-id="service1" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-icon-wrapper"><img id="service1-icon-image" src="https://placehold.co/80x80/e0f2fe/0284c7?text=ICON" alt="Commercial Refrigeration Icon" class="w-full h-full object-cover"></div>
+                            <h3 id="service1-title-card" class="text-xl font-bold mb-2">Commercial Refrigeration</h3>
+                        </a>
+                        <a href="#service-detail-2" class="service-card block bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition-all duration-300" data-service-id="service2" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-icon-wrapper"><img id="service2-icon-image" src="https://placehold.co/80x80/e0f2fe/0284c7?text=ICON" alt="Air Conditioning Icon" class="w-full h-full object-cover"></div>
+                            <h3 id="service2-title-card" class="text-xl font-bold mb-2">Air Conditioning</h3>
+                        </a>
+                        <a href="#service-detail-3" class="service-card block bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition-all duration-300" data-service-id="service3" data-aos="fade-up" data-aos-delay="300">
+                           <div class="card-icon-wrapper"><img id="service3-icon-image" src="https://placehold.co/80x80/e0f2fe/0284c7?text=ICON" alt="Heating Icon" class="w-full h-full object-cover"></div>
+                            <h3 id="service3-title-card" class="text-xl font-bold mb-2">Heating, Heat Pumps & Gas Boilers</h3>
+                        </a>
+                        <a id="service-card-innovation" href="#innovation" class="service-card block bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition-all duration-300 hidden" data-service-id="innovation" data-aos="fade-up" data-aos-delay="400">
+                           <div class="card-icon-wrapper"><img id="innovation-icon-image" src="https://placehold.co/80x80/e0f2fe/0284c7?text=ICON" alt="Innovation and Custom Constructions Icon" class="w-full h-full object-cover"></div>
+                            <h3 id="innovation-title-card" class="text-xl font-bold mb-2">Innovation & Custom Constructions</h3>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id="service-details" class="py-10 bg-slate-50 overflow-hidden">
+                <div id="service-detail-1" class="container mx-auto px-6 py-16 bg-white rounded-lg shadow-md mb-12" data-aos="fade-up">
+                    <div class="grid md:grid-cols-2 gap-16 items-center">
+                        <div class="service-slider-container rounded-lg shadow-xl overflow-hidden">
+                            <div class="swiper-container service-slider" id="service1-slider"><div class="swiper-wrapper"></div></div>
+                        </div>
+                        <div>
+                            <h2 id="service1-title-detail" class="text-3xl font-bold text-gray-800 mb-4">Details: Commercial Refrigeration</h2>
+                            <div id="service1-desc-detail" class="text-gray-600 mb-4 leading-relaxed prose"></div>
+                            <div class="mt-6"><a href="#" class="open-modal text-blue-600 font-semibold hover:underline" data-section="service1"> View Media &rarr;</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="service-detail-2" class="container mx-auto px-6 py-16 bg-white rounded-lg shadow-md mb-12" data-aos="fade-up">
+                    <div class="grid md:grid-cols-2 gap-16 items-center">
+                        <div class="order-2 md:order-1">
+                            <h2 id="service2-title-detail" class="text-3xl font-bold text-gray-800 mb-4">Details: Air Conditioning</h2>
+                            <div id="service2-desc-detail" class="text-gray-600 mb-4 leading-relaxed prose"></div>
+                             <div class="mt-6"><a href="#" class="open-modal text-blue-600 font-semibold hover:underline" data-section="service2"> View Media &rarr;</a></div>
+                        </div>
+                        <div class="order-1 md:order-2 service-slider-container rounded-lg shadow-xl overflow-hidden">
+                            <div class="swiper-container service-slider" id="service2-slider"><div class="swiper-wrapper"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="service-detail-3" class="container mx-auto px-6 py-16 bg-white rounded-lg shadow-md mb-12" data-aos="fade-up">
+                    <div class="grid md:grid-cols-2 gap-16 items-center">
+                        <div class="service-slider-container rounded-lg shadow-xl overflow-hidden">
+                           <div class="swiper-container service-slider" id="service3-slider"><div class="swiper-wrapper"></div></div>
+                        </div>
+                        <div>
+                            <h2 id="service3-title-detail" class="text-3xl font-bold text-gray-800 mb-4">Details: Heating, Heat Pumps & Gas Boilers</h2>
+                            <div id="service3-desc-detail" class="text-gray-600 mb-4 leading-relaxed prose"></div>
+                             <div class="mt-6"><a href="#" class="open-modal text-blue-600 font-semibold hover:underline" data-section="service3"> View Media &rarr;</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="innovation" class="py-20 bg-gray-900 overflow-hidden hidden">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-12" data-aos="fade-up">
+                        <h2 id="innovation-section-title" class="text-3xl font-bold text-white">Innovation & Custom Constructions</h2>
+                        <p class="text-gray-300 mt-2">We develop solutions that change the game.</p>
+                    </div>
+                    <div id="innovation-items-container" class="grid md:grid-cols-2 gap-8"></div>
+                </div>
+            </section>
+            <section id="contact" class="py-20 bg-slate-50">
+                <div class="container mx-auto px-6">
+                    <div id="contact-wrapper" class="bg-white p-8 md:p-12 rounded-xl shadow-lg max-w-4xl mx-auto" data-aos="fade-up">
+                        <div id="contact-form-container">
+                            <h2 class="text-3xl font-bold text-center mb-4">Have a project in mind?</h2>
+                            <p class="text-center text-gray-600 mb-8">Fill out the form or contact us directly.</p>
+                            <div class="flex flex-col md:flex-row justify-center gap-8 mb-10 text-center">
+                                <div>
+                                    <h3 class="font-bold text-lg text-gray-800">Phone</h3>
+                                    <a id="contact-phone-link" href="tel:" class="text-blue-600 hover:underline"></a>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-gray-800">Email</h3>
+                                    <a id="contact-email-link" href="mailto:" class="text-blue-600 hover:underline"></a>
+                                </div>
+                            </div>
+                            <form id="main-contact-form" action="https://formspree.io/f/xvgqyedv" method="POST">
+                                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                                    <div>
+                                        <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" required>
+                                    </div>
+                                    <div>
+                                        <label for="form-email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                        <input type="email" id="form-email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" required>
+                                    </div>
+                                </div>
+                                <div class="mb-6">
+                                    <label for="message" class="block text-gray-700 font-medium mb-2">Describe your project to us</label>
+                                    <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="bg-blue-600 text-white font-bold py-3 px-10 rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-md transform hover:scale-105">Send Request</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-gray-800 text-white">
+            <div class="container mx-auto px-6 py-10">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                    <div>
+                         <a href="#" class="flex items-center space-x-2 justify-center md:justify-start mb-4">
+                           <img id="footer-logo" src="https://placehold.co/150x50/374151/ffffff?text=LOGO" alt="CF Capital Fresh Logo" class="h-24 w-auto">
+                        </a>
+                        <p id="footer-address" class="text-gray-400">Mias Milias 16, Lakatamia, 2323, Nicosia, Cyprus</p>
+                        <div class="mt-4">
+                            <a id="footer-phone-link" href="tel:" class="block text-gray-400 hover:text-white"></a>
+                            <a id="footer-email-link" href="mailto:" class="block text-gray-400 hover:text-white"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-2">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#about" class="text-gray-400 hover:text-white">Our Philosophy</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+                            <li id="footer-nav-link-innovation" class="hidden"><a href="#innovation" class="text-gray-400 hover:text-white">Innovation</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-2">Follow Us</h3>
+                        <div class="flex justify-center md:justify-start space-x-4">
+                            <a href="#" id="social-link-facebook" class="text-gray-400 hover:text-white transform hover:scale-110 transition-transform hidden"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.59 0 0 .59 0 1.325v21.35C0 23.41.59 24 1.325 24H12.82v-9.29h-3.128V11.28h3.128V8.91c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.918c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.43h-3.12V24h5.713c.735 0 1.325-.59 1.325-1.325V1.325C24 .59 23.41 0 22.675 0z"/></svg></a>
+                            <a href="#" id="social-link-instagram" class="text-gray-400 hover:text-white transform hover:scale-110 transition-transform hidden"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.08 2.525c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zm-1.04 2.113a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm-2.08 2.08a3.5 3.5 0 117 0 3.5 3.5 0 01-7 0z" clip-rule="evenodd" /><path d="M12 6.848a5.152 5.152 0 100 10.304 5.152 5.152 0 000-10.304zm0 8.304a3.152 3.152 0 110-6.304 3.152 3.152 0 010 6.304z" /></svg></a>
+                             <a href="#" id="social-link-linkedin" class="text-gray-400 hover:text-white transform hover:scale-110 transition-transform hidden"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                            <a href="#" id="social-link-twitter" class="text-gray-400 hover:text-white transform hover:scale-110 transition-transform hidden"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg></a>
+                             <a href="#" id="social-link-youtube" class="text-gray-400 hover:text-white transform hover:scale-110 transition-transform hidden"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.78 22 12 22 12s0 3.22-.42 4.814a2.506 2.506 0 0 1-1.768 1.768c-1.594.42-7.812.42-7.812.42s-6.218 0-7.812-.42a2.506 2.506 0 0 1-1.768-1.768C2 15.22 2 12 2 12s0-3.22.42-4.814a2.506 2.506 0 0 1 1.768-1.768C5.782 5 12 5 12 5s6.218 0 7.812.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd" /></svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500 text-sm"><p>&copy; 2025 CF Capital Fresh. All rights reserved.</p></div>
+            </div>
+        </footer>
+        <a href="#" id="back-to-top" class="fixed bottom-20 right-4 z-50 bg-gray-700 text-white p-3 rounded-full shadow-lg hover:bg-gray-800 transition-all duration-300 opacity-0 transform translate-y-2 pointer-events-none"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" transform="rotate(90 10 10)" /></svg></a>
+        <div id="mediaModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-[101] hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="bg-white rounded-lg shadow-xl max-w-4xl w-11/12 m-4 relative max-h-[90vh] overflow-y-auto">
+                <div class="flex justify-between items-center p-4 border-b sticky top-0 bg-white z-10">
+                     <h3 id="modal-title" class="text-xl font-semibold">Media</h3>
+                     <button id="closeModal" class="text-gray-600 hover:text-gray-900 text-3xl font-bold">&times;</button>
+                </div>
+                <div id="modalContent" class="p-4 md:p-6"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script id="viewer-script">
+        document.addEventListener('DOMContentLoaded', () => {
+             AOS.init({ duration: 800, once: true, offset: 50 });
+            const dataSource = window.__BAKED_DATA__ || null;
+            if (dataSource) {
+                const sliders = ['hero', 'service1', 'service2', 'service3', 'about'];
+                sliders.forEach(sliderName => {
+                    let images = [];
+                     if(sliderName === 'hero') { images = dataSource.heroImages; }
+                     else if (dataSource.serviceSliders && dataSource.serviceSliders[sliderName]) { images = dataSource.serviceSliders[sliderName]; }
+                    const sliderWrapper = sliderName === 'about' ? document.querySelector('#about-slider .swiper-wrapper') : document.getElementById(`${sliderName}-slider-wrapper`);
+                    if (sliderWrapper && images && images.length > 0) {
+                        sliderWrapper.innerHTML = '';
+                        images.forEach(imageUrl => {
+                            const slide = document.createElement('div');
+                            slide.className = 'swiper-slide';
+                            slide.style.backgroundImage = `url('${imageUrl}')`;
+                            sliderWrapper.appendChild(slide);
+                        });
+                    }
+                });
+            }
+            window.heroSwiper = new Swiper('.hero-slider', { loop: true, effect: 'fade', autoplay: { delay: 5000, disableOnInteraction: false } });
+            window.aboutSwiper = new Swiper('#about-slider', { loop: true, effect: 'fade', autoplay: { delay: 5200, disableOnInteraction: false } });
+            window.service1Swiper = new Swiper('#service1-slider', { loop: true, effect: 'fade', autoplay: { delay: 4000, disableOnInteraction: false } });
+            window.service2Swiper = new Swiper('#service2-slider', { loop: true, effect: 'fade', autoplay: { delay: 4500, disableOnInteraction: false } });
+            window.service3Swiper = new Swiper('#service3-slider', { loop: true, effect: 'fade', autoplay: { delay: 5500, disableOnInteraction: false } });
+            function updateInnovationVisibility() {
+                const innovationItems = dataSource ? (dataSource.innovationMedia || []) : (JSON.parse(localStorage.getItem('innovationItems_en')) || []);
+                const hasInnovationItems = innovationItems.length > 0;
+                document.querySelectorAll('#nav-link-innovation, #mobile-nav-link-innovation, #service-card-innovation, #innovation, #footer-nav-link-innovation').forEach(el => {
+                    el.classList.toggle('hidden', !hasInnovationItems);
+                });
+            }
+            function updateMediaLinks() {
+                const sections = ['about', 'service1', 'service2', 'service3'];
+                sections.forEach(section => {
+                    const mediaLink = document.querySelector(`.open-modal[data-section="${section}"]`);
+                    if (mediaLink) {
+                         let hasMedia = false;
+                         if (dataSource && dataSource.serviceMedia && dataSource.serviceMedia[section]) {
+                             const media = dataSource.serviceMedia[section];
+                             hasMedia = (media.photos && media.photos.length > 0) || (media.videos && media.videos.length > 0);
+                         } else {
+                             const photos = JSON.parse(localStorage.getItem(`${section}-photos_en`)) || [];
+                             const videos = JSON.parse(localStorage.getItem(`${section}-videos_en`)) || [];
+                             hasMedia = photos.length > 0 || videos.length > 0;
+                         }
+                         mediaLink.classList.toggle('hidden', !hasMedia);
+                    }
+                });
+                const innovationItems = dataSource ? (dataSource.innovationMedia || []) : (JSON.parse(localStorage.getItem('innovationItems_en')) || []);
+                innovationItems.forEach((item, index) => {
+                    const mediaLink = document.querySelector(`.open-modal[data-index="${index}"]`);
+                    if (mediaLink) {
+                        const hasMedia = (item.photos && item.photos.length > 0) || (item.videos && item.videos.length > 0);
+                        mediaLink.classList.toggle('hidden', !hasMedia);
+                    }
+                });
+            }
+            updateMediaLinks();
+            updateInnovationVisibility();
+            document.addEventListener('editor-saved', () => { updateMediaLinks(); updateInnovationVisibility(); });
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const closeMobileMenuBtn = document.getElementById('close-mobile-menu');
+            const backToTopButton = document.getElementById('back-to-top');
+            if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.remove('-translate-x-full'));
+            if (closeMobileMenuBtn) closeMobileMenuBtn.addEventListener('click', () => mobileMenu.classList.add('-translate-x-full'));
+            document.querySelectorAll('#mobile-menu a, #back-to-top').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    if (link.id === 'back-to-top') { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); }
+                    if(mobileMenu) mobileMenu.classList.add('-translate-x-full');
+                });
+            });
+             window.onscroll = () => {
+                if (backToTopButton) {
+                    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                        backToTopButton.classList.remove('opacity-0', 'translate-y-2', 'pointer-events-none');
+                    } else {
+                        backToTopButton.classList.add('opacity-0', 'translate-y-2', 'pointer-events-none');
+                    }
+                }
+            };
+            const modal = document.getElementById('mediaModal');
+            const closeModalBtn = document.getElementById('closeModal');
+            const modalContent = document.getElementById('modalContent');
+            const modalTitle = document.getElementById('modal-title');
+            const closeModal = () => { if(modal) modal.classList.add('hidden'); if(modalContent) modalContent.innerHTML = ''; };
+            if(closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+            if(modal) modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+            document.addEventListener('keydown', (e) => { if (e.key === "Escape") closeModal(); });
+            document.addEventListener('click', (e) => {
+                const btn = e.target.closest('.open-modal, .innovation-item-display');
+                if (!btn) return;
+                e.preventDefault();
+                let title = "Gallery";
+                let itemData;
+                const innovationItems = dataSource ? dataSource.innovationMedia : (JSON.parse(localStorage.getItem('innovationItems_en')) || []);
+                if (btn.matches('.innovation-item-display')) {
+                    const item = innovationItems[btn.dataset.index];
+                    if (item) { title = `Gallery - ${item.title}`; itemData = item; }
+                } else if (btn.matches('.open-modal')) {
+                    if (btn.dataset.section) {
+                        const section = btn.dataset.section;
+                        title = document.getElementById(`${section}-title-detail`)?.textContent || document.getElementById(`${section}-title-text`)?.textContent || `Gallery`;
+                        if (dataSource) { itemData = dataSource.serviceMedia[section]; }
+                        else { itemData = { photos: JSON.parse(localStorage.getItem(`${section}-photos_en`)) || [], videos: JSON.parse(localStorage.getItem(`${section}-videos_en`)) || [] }; }
+                    } else if (btn.dataset.index) {
+                        const item = innovationItems[btn.dataset.index];
+                        if (item) { title = `Gallery - ${item.title}`; itemData = item; }
+                    }
+                }
+                if (itemData) {
+                    const photos = itemData.photos || [];
+                    const videos = itemData.videos || [];
+                    let galleryHTML = '';
+                    if (photos.length > 0) {
+                        galleryHTML += '<h4 class="font-bold text-lg mb-2">Photos</h4><div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-8">';
+                        photos.forEach(imgUrl => { galleryHTML += `<div><img src="${imgUrl.trim()}" class="w-full h-auto rounded-lg shadow-md object-cover"></div>`; });
+                        galleryHTML += '</div>';
+                    }
+                    if (videos.length > 0) {
+                        galleryHTML += '<h4 class="font-bold text-lg mb-2">Videos</h4>';
+                        videos.forEach(url => { galleryHTML += `<div class="modal-video-container mb-4"><iframe src="${url}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`; });
+                    }
+                    modalContent.innerHTML = galleryHTML === '' ? `<p>No media available for this category.</p>` : galleryHTML;
+                    modalTitle.innerText = title;
+                    modal.classList.remove('hidden');
+                }
+            });
+        });
+    </script>
+    <script id="editor-script">
+        document.addEventListener('DOMContentLoaded', () => {
+            const lang = 'en';
+            const editorSidebar = document.getElementById('editor-sidebar');
+            const openEditorBtn = document.getElementById('open-editor-btn');
+            const closeEditorBtn = document.getElementById('close-editor-btn');
+            const editorForm = document.getElementById('editor-form');
+            const exportBtn = document.getElementById('export-btn');
+            const websiteContainer = document.getElementById('website-container');
+            function extractYoutubeEmbedUrl(input) { const match = input.match(/src="([^"]+)"/); return match ? match[1] : input; }
+            const contentMap = { 'header-logo': 'logo-url', 'footer-logo': 'logo-url', 'header-phone-link': 'phone', 'contact-phone-link': 'phone', 'footer-phone-link': 'phone', 'contact-email-link': 'email', 'footer-email-link': 'email', 'footer-address': 'address', 'hero-title-text': 'hero-title', 'hero-subtitle-text': 'hero-subtitle', 'about-title-text': 'about-title', 'about-text-content': 'about-text', 'service1-title-card': 'service1-title', 'service1-title-detail': 'service1-title', 'service1-desc-detail': 'service1-desc', 'service2-title-card': 'service2-title', 'service2-title-detail': 'service2-title', 'service2-desc-detail': 'service2-desc', 'service3-title-card': 'service3-title', 'service3-title-detail': 'service3-title', 'service3-desc-detail': 'service3-desc', 'innovation-title-card': 'innovation-main-title', 'innovation-section-title': 'innovation-main-title' };
+            const socialMap = { 'social-link-facebook': 'social-facebook', 'social-link-instagram': 'social-instagram', 'social-link-linkedin': 'social-linkedin', 'social-link-twitter': 'social-twitter', 'social-link-youtube': 'social-youtube' };
+            const serviceIconMap = { 'service1-icon-image': 'service1-icon-url', 'service2-icon-image': 'service2-icon-url', 'service3-icon-image': 'service3-icon-url', 'innovation-icon-image': 'innovation-icon-url' };
+            const markdownFields = ['hero-subtitle', 'about-text', 'service1-desc', 'service2-desc', 'service3-desc'];
+            const mediaSections = ['service1', 'service2', 'service3', 'about'];
+            const dynamicMediaContainers = {};
+            mediaSections.forEach(section => { const container = document.getElementById(`${section}-media-inputs`); if (container) { dynamicMediaContainers[section] = container; } });
+            const innovationContainer = document.getElementById('innovation-inputs');
+            const addInnovationBtn = document.getElementById('add-innovation-btn');
+            function applyContent(data) {
+                const { savedContent, savedInnovations, savedHeroImages, savedServiceSliders } = data;
+                for (const elemId in contentMap) {
+                    const inputId = contentMap[elemId];
+                    const element = document.getElementById(elemId);
+                    if (element) {
+                        const content = savedContent[inputId] || '';
+                        if (element.tagName === 'IMG') { if (content) { element.src = content; } else if (elemId.includes('logo')) { element.src = `https://placehold.co/150x50/${elemId === 'header-logo' ? 'f8fafc' : '374151'}/1e3a8a?text=LOGO`; } }
+                        else if (markdownFields.includes(inputId) || element.classList.contains('prose')) { element.innerHTML = marked.parse(content); }
+                        else if (element.tagName === 'A' && (element.href.startsWith('tel:') || element.href.startsWith('mailto:'))) { element.textContent = content; if (content) { const linkType = element.href.startsWith('tel:') ? 'tel' : 'mailto'; element.href = `${linkType}:${content}`; } }
+                        else { element.textContent = content; }
+                    }
+                }
+                for (const elemId in socialMap) { const url = savedContent[socialMap[elemId]] || ''; const element = document.getElementById(elemId); if (element) { if (url) { element.href = url; element.classList.remove('hidden'); } else { element.classList.add('hidden'); } } }
+                for (const elemId in serviceIconMap) { const element = document.getElementById(elemId); if (element && savedContent[serviceIconMap[elemId]]) { element.src = savedContent[serviceIconMap[elemId]]; } }
+                const heroSliderWrapper = document.getElementById('hero-slider-wrapper');
+                heroSliderWrapper.innerHTML = '';
+                if(savedHeroImages && savedHeroImages.length > 0) { savedHeroImages.forEach(imageUrl => { const slide = document.createElement('div'); slide.className = 'swiper-slide'; slide.style.backgroundImage = `url('${imageUrl}')`; heroSliderWrapper.appendChild(slide); }); }
+                else { const slide = document.createElement('div'); slide.className = 'swiper-slide'; slide.style.backgroundImage = `url('https://placehold.co/1920x1080/001c46/ffffff?text=CF+Capital+Fresh')`; heroSliderWrapper.appendChild(slide); }
+                if (window.heroSwiper && typeof window.heroSwiper.destroy === 'function') window.heroSwiper.destroy(true, true);
+                window.heroSwiper = new Swiper('.hero-slider', { loop: true, effect: 'fade', autoplay: { delay: 5000, disableOnInteraction: false } });
+                ['service1', 'service2', 'service3', 'about'].forEach((service, index) => {
+                    const sliderWrapper = document.querySelector(`#${service}-slider .swiper-wrapper`);
+                    if (!sliderWrapper) return;
+                    const images = savedServiceSliders[service] || [];
+                    sliderWrapper.innerHTML = '';
+                    if (images.length > 0) { images.forEach(imageUrl => { const slide = document.createElement('div'); slide.className = 'swiper-slide'; slide.style.backgroundImage = `url('${imageUrl}')`; sliderWrapper.appendChild(slide); }); }
+                    else { const slide = document.createElement('div'); slide.className = 'swiper-slide'; const placeholderText = savedContent[`${service}-title`] || (service === 'about' ? 'Our Philosophy' : 'Service'); slide.style.backgroundImage = `url('https://placehold.co/600x450/93c5fd/1e3a8a?text=${encodeURIComponent(placeholderText)}')`; sliderWrapper.appendChild(slide); }
+                    const swiperVar = `${service}Swiper`;
+                    if (window[swiperVar] && typeof window[swiperVar].destroy === 'function') window[swiperVar].destroy(true, true);
+                    window[swiperVar] = new Swiper(`#${service}-slider`, { loop: true, effect: 'fade', autoplay: { delay: 4000 + (index * 500), disableOnInteraction: false } });
+                });
+                const innovationItemsContainer = document.getElementById('innovation-items-container');
+                innovationItemsContainer.innerHTML = '';
+                if (savedInnovations.length === 0) { innovationItemsContainer.innerHTML = `<p class="text-center text-gray-400" data-aos="fade-up">No innovation items have been added yet.</p>`; }
+                else { savedInnovations.forEach((item, index) => { const hasMedia = (item.photos && item.photos.length > 0) || (item.videos && item.videos.length > 0); const innovationDiv = document.createElement('div'); innovationDiv.className = 'bg-gray-800 border border-gray-700 rounded-lg shadow-xl overflow-hidden hover:border-blue-500 transition-colors duration-300'; innovationDiv.setAttribute('data-aos', 'fade-up'); innovationDiv.setAttribute('data-aos-delay', (index % 2) * 100); innovationDiv.innerHTML = `<div class="h-64 bg-gray-700 innovation-item-display" data-index="${index}"><img src="${item.imageUrl || 'https://placehold.co/600x400/111827/4b5563?text=Innovation'}" alt="${item.title}" class="w-full h-full object-cover"></div><div class="p-8"><h3 class="text-2xl font-bold text-white mb-3">${item.title}</h3><div class="text-gray-400 leading-relaxed prose">${marked.parse(item.desc || '')}</div><div class="mt-4"><a href="#" class="open-modal text-blue-400 text-sm font-semibold hover:underline ${hasMedia ? '' : 'hidden'}" data-index="${index}">View Media &rarr;</a></div></div>`; innovationItemsContainer.appendChild(innovationDiv); }); }
+                document.dispatchEvent(new CustomEvent('editor-saved'));
+            }
+            function loadAllData() {
+                const savedContent = JSON.parse(localStorage.getItem(`websiteContent_${lang}`)) || {};
+                const savedInnovations = JSON.parse(localStorage.getItem(`innovationItems_${lang}`)) || [];
+                const savedServiceMedia = mediaSections.reduce((acc, section) => { acc[section] = { photos: JSON.parse(localStorage.getItem(`${section}-photos_${lang}`)) || [], videos: JSON.parse(localStorage.getItem(`${section}-videos_${lang}`)) || [] }; return acc; }, {});
+                const savedHeroImages = JSON.parse(localStorage.getItem(`heroImages_${lang}`)) || [];
+                const savedServiceSliders = { service1: JSON.parse(localStorage.getItem(`service1-sliderImages_${lang}`)) || [], service2: JSON.parse(localStorage.getItem(`service2-sliderImages_${lang}`)) || [], service3: JSON.parse(localStorage.getItem(`service3-sliderImages_${lang}`)) || [], about: JSON.parse(localStorage.getItem(`about-sliderImages_${lang}`)) || [] };
+                return { savedContent, savedInnovations, savedServiceMedia, savedHeroImages, savedServiceSliders };
+            }
+            function populateForm(data){
+                const{savedContent, savedInnovations, savedServiceMedia, savedHeroImages, savedServiceSliders}=data;
+                for(const o in savedContent){const t=document.getElementById(o);if(t){t.value=savedContent[o]||""}}
+                const heroSliderImagesContainer = document.getElementById('hero-slider-images');
+                heroSliderImagesContainer.innerHTML = '';
+                savedHeroImages.forEach(url => createImageInputField(heroSliderImagesContainer, 'hero-image-urls[]', url));
+                ['service1', 'service2', 'service3', 'about'].forEach(service => { const container = document.getElementById(`${service}-slider-images`); if(!container) return; container.innerHTML = ''; const images = savedServiceSliders[service] || []; images.forEach(url => createImageInputField(container, `${service}-slider-urls[]`, url)); });
+                if(innovationContainer){innovationContainer.innerHTML=""}
+                savedInnovations.forEach(o=>createInnovationInputField(o));
+                mediaSections.forEach(o=>{ const t=dynamicMediaContainers[o]; if(t){ t.innerHTML=""; if(savedServiceMedia[o] && savedServiceMedia[o].photos) { savedServiceMedia[o].photos.forEach(l=>createMediaInputField(o,"photo",l)); } if(savedServiceMedia[o] && savedServiceMedia[o].videos) { savedServiceMedia[o].videos.forEach(l=>createMediaInputField(o,"video",l)); } } });
+            }
+            function createImageInputField(container, name, value = '') { const div = document.createElement('div'); div.className = 'relative group flex items-center space-x-2'; div.innerHTML = `<input type="text" name="${name}" value="${value}" placeholder="Image URL" class="w-full p-2 pr-6 border border-gray-300 rounded-md text-xs"><button type="button" class="remove-btn text-red-500">&times;</button>`; container.appendChild(div); div.querySelector('.remove-btn').addEventListener('click', () => div.remove()); }
+            function createInnovationInputField(i={title:"",desc:"",imageUrl:"",photos:[],videos:[]}){const n= `innovation-${Date.now()}`,o=document.createElement("div");o.className="innovation-item-form relative group p-3 border rounded-md space-y-2";o.dataset.id=n;const l=`${n}-photos-inputs`,a=`${n}-videos-inputs`;o.innerHTML=`<h5 class="font-medium text-gray-700 mb-2">Innovation Item</h5><label for="${n}-title" class="block text-gray-600">Item Title</label><input type="text" id="${n}-title" name="${n}-title" value="${i.title}" class="w-full p-2 border border-gray-300 rounded-md text-xs"><label for="${n}-desc" class="block text-gray-600 mt-2">Description</label><div class="format-toolbar"><button type="button" class="format-btn" data-format="bold" data-target="${n}-desc"><b>B</b></button><button type="button" class="format-btn" data-format="italic" data-target="${n}-desc"><i>I</i></button></div><textarea id="${n}-desc" name="${n}-desc" rows="5" class="w-full p-2 border border-gray-300 rounded-md">${i.desc}</textarea><label for="${n}-image-url" class="block text-gray-600 mt-2">Main Image URL</label><input type="text" id="${n}-image-url" name="${n}-image-url" value="${i.imageUrl}" class="w-full p-2 border border-gray-300 rounded-md text-xs"><h6 class="font-medium text-gray-700 mt-4">Gallery</h6><div id="${l}" class="space-y-2"></div><button type="button" class="add-innovation-media-btn bg-blue-500 text-white font-bold py-1 px-3 rounded-lg" data-itemid="${n}" data-type="photo">Photo</button><div id="${a}" class="space-y-2 mt-2"></div><button type="button" class="add-innovation-media-btn bg-gray-700 text-white font-bold py-1 px-3 rounded-lg" data-itemid="${n}" data-type="video">Video</button><button type="button" class="remove-innovation-btn absolute top-2 right-2 text-red-500">&times;</button>`;innovationContainer.appendChild(o);o.querySelector(".remove-innovation-btn").addEventListener("click",()=>o.remove());i.photos.forEach(t=>createInnovationMediaInputField(l,"photo",t));i.videos.forEach(t=>createInnovationMediaInputField(a,"video",t))}
+            function createMediaInputField(i,n,o=""){const l=dynamicMediaContainers[i];if(!l){return;}const a=`${i}-${n}[]`,d="photo"===n?"Image URL":"Video URL (embed)",r=document.createElement("div");r.className="relative group flex items-center space-x-2";r.innerHTML=`<input type="text" name="${a}" value="${o}" placeholder="${d}" class="w-full p-2 pr-6 border border-gray-300 rounded-md text-xs"><button type="button" class="remove-btn text-red-500">&times;</button>`;l.appendChild(r);r.querySelector(".remove-btn").addEventListener("click",()=>r.remove())}
+            function createInnovationMediaInputField(i,n,o=""){const l=document.getElementById(i);if(!l)return;const a=l.closest(".innovation-item-form").dataset.id,d=`${a}-${n}[]`,r="photo"===n?"A direct link to the image is required (e.g., .jpg, .png).":"Paste the embed link from YouTube. The application will recognize the code.",s=document.createElement("div");s.className="relative group flex items-center space-x-2";s.innerHTML=`<input type="text" name="${d}" value="${o}" placeholder="${"photo"===n?"Photo URL":"Video URL"}" class="w-full p-2 pr-6 border border-gray-300 rounded-md text-xs"><span class="absolute top-1/2 right-2 -translate-y-1/2 cursor-help text-gray-400" title="${r}">?</span><button type="button" class="remove-btn text-red-500 hover:text-red-700 transition duration-300">&times;</button>`;l.appendChild(s);s.querySelector(".remove-btn").addEventListener("click",()=>s.remove())}
+            const initialData = loadAllData();
+            applyContent(initialData);
+            populateForm(initialData);
+            document.querySelectorAll('.format-btn').forEach(button => { button.addEventListener('click', (e) => { const format = e.currentTarget.dataset.format; const targetId = e.currentTarget.dataset.target; const textarea = document.getElementById(targetId); if (!textarea) return; const start = textarea.selectionStart; const end = textarea.selectionEnd; const selectedText = textarea.value.substring(start, end); let replacement = selectedText; if (format === 'bold') { replacement = `**${selectedText}**`; } else if (format === 'italic') { replacement = `*${selectedText}*`; } textarea.setRangeText(replacement, start, end, 'select'); textarea.focus(); }); });
+            editorForm.addEventListener('submit', (e) => {
+                if (!(e.submitter && e.submitter.id === 'export-btn')) { e.preventDefault(); }
+                const formData = new FormData(e.target);
+                const newData = Object.fromEntries(formData.entries());
+                const innovationItems = [];
+                document.querySelectorAll('.innovation-item-form').forEach(itemForm => { const itemId = itemForm.dataset.id; const innovationItem = { title: formData.get(`${itemId}-title`), desc: formData.get(`${itemId}-desc`), imageUrl: formData.get(`${itemId}-image-url`), photos: formData.getAll(`${itemId}-photo[]`).filter(Boolean).map(url => url.trim()), videos: formData.getAll(`${itemId}-video[]`).filter(Boolean).map(url => extractYoutubeEmbedUrl(url)) }; innovationItems.push(innovationItem); });
+                localStorage.setItem(`innovationItems_${lang}`, JSON.stringify(innovationItems));
+                mediaSections.forEach(section => { if (dynamicMediaContainers[section]) { const newServiceMedia = { photos: formData.getAll(`${section}-photo[]`).filter(Boolean).map(url => url.trim()), videos: formData.getAll(`${section}-video[]`).filter(Boolean).map(url => extractYoutubeEmbedUrl(url)) }; localStorage.setItem(`${section}-photos_${lang}`, JSON.stringify(newServiceMedia.photos)); localStorage.setItem(`${section}-videos_${lang}`, JSON.stringify(newServiceMedia.videos)); } });
+                const heroImages = Array.from(document.querySelectorAll('input[name="hero-image-urls[]"]')).map(input => input.value).filter(Boolean);
+                localStorage.setItem(`heroImages_${lang}`, JSON.stringify(heroImages));
+                ['service1', 'service2', 'service3', 'about'].forEach(service => { const sliderImages = Array.from(document.querySelectorAll(`input[name="${service}-slider-urls[]"]`)).map(input => input.value).filter(Boolean); localStorage.setItem(`${service}-sliderImages_${lang}`, JSON.stringify(sliderImages)); });
+                localStorage.setItem(`websiteContent_${lang}`, JSON.stringify(newData));
+                applyContent(loadAllData());
+                const submitBtn = editorForm.querySelector('button[type="submit"]');
+                submitBtn.textContent = 'Saved!';
+                setTimeout(() => { submitBtn.textContent = 'Save & Apply'; }, 2000);
+            });
+            exportBtn.addEventListener('click', () => {
+                const allData = loadAllData();
+                const newDoc = document.cloneNode(true);
+                for (const elemId in contentMap) { const element = newDoc.getElementById(elemId); if (element) { const content = allData.savedContent[contentMap[elemId]] || ''; if (element.tagName === 'IMG') { if (content) element.src = content; } else if (element.classList.contains('prose')) { element.innerHTML = marked.parse(content); } else if (element.tagName === 'A' && (element.href.startsWith('tel:') || element.href.startsWith('mailto:'))) { element.textContent = content; if (content) { const linkType = element.href.startsWith('tel:') ? 'tel' : 'mailto'; element.href = `${linkType}:${content}`; } } else { element.textContent = content; } } }
+                for (const elemId in socialMap) { const element = newDoc.getElementById(elemId); const url = allData.savedContent[socialMap[elemId]] || ''; if(element) { if(url) { element.href = url; element.classList.remove('hidden'); } else { element.classList.add('hidden'); } } }
+                for (const elemId in serviceIconMap) { const element = newDoc.getElementById(elemId); if (element && allData.savedContent[serviceIconMap[elemId]]) { element.src = allData.savedContent[serviceIconMap[elemId]]; } }
+                const bakedInnovationContainer = newDoc.getElementById('innovation-items-container');
+                bakedInnovationContainer.innerHTML = '';
+                if (allData.savedInnovations.length > 0) {
+                    allData.savedInnovations.forEach((item, index) => {
+                        const hasMedia = (item.photos && item.photos.length > 0) || (item.videos && item.videos.length > 0);
+                        const innovationDiv = newDoc.createElement('div');
+                        innovationDiv.className = 'bg-gray-800 border border-gray-700 rounded-lg shadow-xl overflow-hidden';
+                        innovationDiv.innerHTML = `<div class="h-64 bg-gray-700 innovation-item-display" data-index="${index}"><img src="${item.imageUrl || 'https://placehold.co/600x400/111827/4b5563?text=Innovation'}" alt="${item.title}" class="w-full h-full object-cover"></div><div class="p-8"><h3 class="text-2xl font-bold text-white mb-3">${item.title}</h3><div class="text-gray-400 leading-relaxed prose">${marked.parse(item.desc || '')}</div><div class="mt-4"><a href="#" class="open-modal text-blue-400 text-sm font-semibold hover:underline ${hasMedia ? '' : 'hidden'}" data-index="${index}">View Media &rarr;</a></div></div>`;
+                        bakedInnovationContainer.appendChild(innovationDiv);
+                    });
+                }
+                const dataScript = newDoc.createElement('script');
+                dataScript.id = 'baked-media-data';
+                const bakedData = { serviceMedia: allData.savedServiceMedia, innovationMedia: allData.savedInnovations.map(item => ({ title: item.title, photos: item.photos, videos: item.videos })), heroImages: allData.savedHeroImages, serviceSliders: allData.savedServiceSliders };
+                dataScript.textContent = `window.__BAKED_DATA__ = ${JSON.stringify(bakedData)};`;
+                newDoc.head.appendChild(dataScript);
+                newDoc.getElementById('editor-sidebar').remove();
+                newDoc.getElementById('open-editor-btn').remove();
+                newDoc.getElementById('editor-script').remove();
+                newDoc.querySelectorAll('[data-aos]').forEach(el => el.removeAttribute('data-aos'));
+                newDoc.querySelectorAll('.aos-init').forEach(el => el.classList.remove('aos-init'));
+                newDoc.querySelectorAll('.aos-animate').forEach(el => el.classList.remove('aos-animate'));
+                let finalHtml = '<!DOCTYPE html>\n' + newDoc.documentElement.outerHTML;
+                const blob = new Blob([finalHtml], { type: 'text/html' });
+                const a = document.createElement('a');
+                a.href = URL.createObjectURL(blob);
+                a.download = 'index.html';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(a.href);
+            });
+            if (openEditorBtn) { openEditorBtn.addEventListener('click', () => { editorSidebar.classList.remove('translate-x-full'); websiteContainer.classList.add('md:pr-80'); openEditorBtn.classList.add('hidden'); }); }
+            if (closeEditorBtn) { closeEditorBtn.addEventListener('click', () => { editorSidebar.classList.add('translate-x-full'); websiteContainer.classList.remove('md:pr-80'); openEditorBtn.classList.remove('hidden'); }); }
+            if(addInnovationBtn) { addInnovationBtn.addEventListener('click', () => createInnovationInputField()); }
+            document.getElementById('add-hero-image-btn')?.addEventListener('click', () => createImageInputField(document.getElementById('hero-slider-images'), 'hero-image-urls[]'));
+            document.getElementById('add-about-image-btn')?.addEventListener('click', () => createImageInputField(document.getElementById('about-slider-images'), 'about-slider-urls[]'));
+            document.querySelectorAll('.add-service-image-btn').forEach(btn => { btn.addEventListener('click', (e) => { const service = e.target.dataset.service; createImageInputField(document.getElementById(`${service}-slider-images`), `${service}-slider-urls[]`); }); });
+            document.querySelectorAll('.add-media-btn').forEach(btn => {btn.addEventListener('click', (e) => {createMediaInputField(e.target.dataset.section, e.target.dataset.type);});});
+            if(innovationContainer) { innovationContainer.addEventListener('click', (e) => {if (e.target.classList.contains('add-innovation-media-btn')) {createInnovationMediaInputField(`${e.target.dataset.itemid}-${e.target.dataset.type}s-inputs`, e.target.dataset.type);}}); }
+        });
+    </script>
+</body>
+</html>
